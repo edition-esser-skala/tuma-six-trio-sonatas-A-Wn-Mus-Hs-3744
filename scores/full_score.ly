@@ -3,14 +3,13 @@
 \include "../definitions.ly"
 \include "score_settings/full-score.ly"
 
+\paper { systems-per-page = #4 }
+
 \book {
   \bookpart {
-    \section "I" "Larghetto overo andante – Tempo moderato"
-    % \addTocEntry
-    \paper {
-      % systems-per-page = #4
-      indent = 2\cm
-    }
+    \section "I" "Larghetto overo andante – Allegro moderato"
+    \addTocEntry
+    \paper { indent = 2\cm }
     \score { %\articulate
       <<
         \new StaffGroup <<
@@ -34,7 +33,7 @@
         \new FiguredBass { \IBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 100 }
+      \midi { \tempo 4 = 70 } % 180
     }
   }
 }

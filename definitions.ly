@@ -7,6 +7,7 @@
 
 
 tempoIa = \tempoMarkup "Larghetto overo andante"
+tempoIb = \tempoMarkup "Allegro moderato"
 
 
 \include "notes/vl1.ly"
