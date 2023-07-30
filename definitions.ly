@@ -10,6 +10,9 @@ tempoIa = \tempoMarkup "Larghetto overo andante"
   tempoIb = \tempoMarkup "Allegro moderato"
 tempoIIa = \tempoMarkup "Adagio"
   tempoIIb = \tempoMarkup "Allegro"
+tempoIIIa = \tempoMarkup "Largo"
+  tempoIIIb = \tempo 4 = 110
+  % tempoIIIb = \tempoMarkup "Allegro"
 
 
 \include "notes/vl1.ly"
