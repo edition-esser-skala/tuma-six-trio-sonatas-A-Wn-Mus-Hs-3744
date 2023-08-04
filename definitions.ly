@@ -11,8 +11,10 @@ tempoIa = \tempoMarkup "Larghetto overo andante"
 tempoIIa = \tempoMarkup "Adagio"
   tempoIIb = \tempoMarkup "Allegro"
 tempoIIIa = \tempoMarkup "Largo"
-  tempoIIIb = \tempo 4 = 110
-  % tempoIIIb = \tempoMarkup "Allegro"
+  tempoIIIb = \tempoMarkup "Fuga · Allegro"
+tempoIVa = \tempoMarkup "Largo"
+  tempoIVb = \tempoMarkup "Fuga errante · Allegro mà non presto"
+  tempoIVc = \tempoMarkup "Adagio"
 
 
 \include "notes/vl1.ly"
