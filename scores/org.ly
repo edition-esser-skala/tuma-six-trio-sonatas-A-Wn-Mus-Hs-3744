@@ -6,26 +6,71 @@
 
 \book {
   \bookpart {
-    \section "1" "First"
+    \section "I" "Larghetto – Allegro moderato"
     \addTocEntry
     \paper { indent = 2\cm }
     \score {
       <<
         \new Staff {
           \set Staff.instrumentName = "Organo"
-          \xxxOrgano
+          \IOrgano
         }
-        \new FiguredBass { \xxxBassFigures }
+        \new FiguredBass { \IBassFigures }
       >>
     }
   }
   \bookpart {
-    \section "2" "Second"
+    \section "II" "Adagio – Allegro"
     \addTocEntry
+    \paper { systems-per-page = #7 }
     \score {
       <<
-        \new Staff { \yyyOrgano }
-        \new FiguredBass { \yyyBassFigures }
+        \new Staff { \IIOrgano }
+        \new FiguredBass { \IIBassFigures }
+      >>
+    }
+  }
+  \bookpart {
+    \section "III" "Largo – Allegro"
+    \addTocEntry
+    \paper { systems-per-page = #6 }
+    \score {
+      <<
+        \new Staff { \IIIOrgano }
+        \new FiguredBass { \IIIBassFigures }
+      >>
+    }
+  }
+  \bookpart {
+    \section "IV" "Largo – Allegro mà non presto"
+    \addTocEntry
+    \paper { page-count = #1 }
+    \score {
+      <<
+        \new Staff { \IVOrgano }
+        \new FiguredBass { \IVBassFigures }
+      >>
+    }
+  }
+  \bookpart {
+    \section "V" "Largo – Allegretto"
+    \addTocEntry
+    \paper { systems-per-page = #7 }
+    \score {
+      <<
+        \new Staff { \VOrgano }
+        \new FiguredBass { \VBassFigures }
+      >>
+    }
+  }
+  \bookpart {
+    \section "VI" "Larghetto – Allegretto"
+    \addTocEntry
+    \paper { systems-per-page = #6 }
+    \score {
+      <<
+        \new Staff { \VIOrgano }
+        \new FiguredBass { \VIBassFigures }
       >>
     }
   }

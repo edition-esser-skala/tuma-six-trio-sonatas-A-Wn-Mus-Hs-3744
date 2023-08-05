@@ -6,24 +6,62 @@
 
 \book {
   \bookpart {
-    \section "1" "First"
+    \section "I" "Larghetto – Allegro moderato"
     \addTocEntry
-    \paper { indent = 2\cm }
+    \paper { indent = 2\cm systems-per-page = #7 }
     \score {
       <<
         \new Staff {
           \set Staff.instrumentName = "Violino I"
-          \xxxViolinoI
+          \IViolinoI
         }
       >>
     }
   }
   \bookpart {
-    \section "2" "Second"
+    \section "II" "Adagio – Allegro"
     \addTocEntry
     \score {
       <<
-        \new Staff { \yyyViolinoI }
+        \new Staff { \IIViolinoI }
+      >>
+    }
+  }
+  \bookpart {
+    \section "III" "Largo – Allegro"
+    \addTocEntry
+    \paper { systems-per-page = #7 }
+    \score {
+      <<
+        \new Staff { \IIIViolinoI }
+      >>
+    }
+  }
+  \bookpart {
+    \section "IV" "Largo – Allegro mà non presto"
+    \addTocEntry
+    \paper { systems-per-page = #7 }
+    \score {
+      <<
+        \new Staff { \IVViolinoI }
+      >>
+    }
+  }
+  \bookpart {
+    \section "V" "Largo – Allegretto"
+    \addTocEntry
+    \score {
+      <<
+        \new Staff { \VViolinoI }
+      >>
+    }
+  }
+  \bookpart {
+    \section "VI" "Larghetto – Allegretto"
+    \addTocEntry
+    \score {
+      <<
+        \new Staff { \VIViolinoI }
       >>
     }
   }

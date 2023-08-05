@@ -1,19 +1,19 @@
 \version "2.24.0"
 
 \include "../definitions.ly"
-#(define option-instrument-name "b")
+#(define option-instrument-name "vl 2")
 \include "score_settings/one-staff.ly"
 
 \book {
   \bookpart {
     \section "I" "Larghetto – Allegro moderato"
     \addTocEntry
-    \paper { indent = 2\cm }
+    \paper { indent = 2\cm systems-per-page = #7 }
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Organo"
-          \IOrgano
+          \set Staff.instrumentName = "Violino II"
+          \IViolinoII
         }
       >>
     }
@@ -21,50 +21,47 @@
   \bookpart {
     \section "II" "Adagio – Allegro"
     \addTocEntry
-    \paper { systems-per-page = #7 }
     \score {
       <<
-        \new Staff { \IIOrgano }
+        \new Staff { \IIViolinoII }
       >>
     }
   }
   \bookpart {
     \section "III" "Largo – Allegro"
     \addTocEntry
-    \paper { systems-per-page = #6 }
+    \paper { systems-per-page = #7 }
     \score {
       <<
-        \new Staff { \IIIOrgano }
+        \new Staff { \IIIViolinoII }
       >>
     }
   }
   \bookpart {
     \section "IV" "Largo – Allegro mà non presto"
     \addTocEntry
-    \paper { page-count = #1 }
+    \paper { systems-per-page = #7 }
     \score {
       <<
-        \new Staff { \IVOrgano }
+        \new Staff { \IVViolinoII }
       >>
     }
   }
   \bookpart {
     \section "V" "Largo – Allegretto"
     \addTocEntry
-    \paper { systems-per-page = #7 }
     \score {
       <<
-        \new Staff { \VOrgano }
+        \new Staff { \VViolinoII }
       >>
     }
   }
   \bookpart {
     \section "VI" "Larghetto – Allegretto"
     \addTocEntry
-    \paper { systems-per-page = #6 }
     \score {
       <<
-        \new Staff { \VIOrgano }
+        \new Staff { \VIViolinoII }
       >>
     }
   }
