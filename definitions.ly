@@ -15,6 +15,9 @@ tempoIIIa = \tempoMarkup "Largo"
 tempoIVa = \tempoMarkup "Largo"
   tempoIVb = \tempoMarkup "Fuga errante · Allegro mà non presto"
   tempoIVc = \tempoMarkup "Adagio"
+tempoVa = \tempoMarkup "Largo"
+  tempoVb = \tempoMarkup "Adagio"
+  tempoVc = \tempoMarkup "Allegretto"
 
 
 \include "notes/vl1.ly"

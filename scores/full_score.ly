@@ -94,8 +94,37 @@
   %     \midi { \tempo 4 = 90 } % 110
   %   }
   % }
+  % \bookpart {
+  %   \section "IV" "Largo – Allegro mà non presto"
+  %   \addTocEntry
+  %   \score { %\articulate
+  %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff \with { \smallGroupDistance } <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \IVViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \IVViolinoII
+  %           }
+  %         >>
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \IVOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \IVBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 70 } % 110 – 70
+  %   }
+  % }
   \bookpart {
-    \section "IV" "Largo – Allegro mà non presto"
+    \section "V" "Largo – Allegretto"
     \addTocEntry
     \score { %\articulate
       <<
@@ -104,23 +133,23 @@
             \set GrandStaff.instrumentName = "vl"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \IVViolinoI
+              \VViolinoI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \IVViolinoII
+              \VViolinoII
             }
           >>
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \IVOrgano
+            \VOrgano
           }
         >>
-        \new FiguredBass { \IVBassFigures }
+        \new FiguredBass { \VBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 70 } % 110 – 70
+      \midi { \tempo 4 = 80 } % 90
     }
   }
 }
