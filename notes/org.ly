@@ -831,7 +831,7 @@ VIOrgano = {
 }
 
 VIBassFigures = \figuremode {
-  r8 r4 <\t>
+  r8 r4 \bo <[\t _]>
   r <6>
   <6 5> <_+>
   r4. <6>8
@@ -939,6 +939,6 @@ VIBassFigures = \figuremode {
   <6>8 q4.
   r2
   r
-  r4 <6 5>
+  r4 \bc <[6 5]>
   r2 %110 finis
 }
